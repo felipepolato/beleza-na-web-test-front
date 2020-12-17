@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import CartPage from '../screen/CartPage/CartPage'
-// import FeedPage from '../screen/Feedpage/FeedPage'
-// import PayPage from '../screen/PayPage/PayPage'
+import FeedPage from "../screen/FeedPage/FeedPage"
+import PayPage from "../screen/PayPage/PayPage"
 
 function Router() {
   return (
@@ -11,12 +11,12 @@ function Router() {
         <Route exact path={'/cart'}>
           <CartPage />
         </Route>
-        {/* <Route exact path={'/feed'}>
+        <Route exact path={'/feed'}>
           <FeedPage />
         </Route>
         <Route exact path="/paypage">
           <PayPage />
-        </Route> */}
+        </Route>
         <Route>
           <div>Página não encontrada</div>
         </Route>
