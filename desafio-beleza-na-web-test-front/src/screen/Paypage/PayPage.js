@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Button from "../../component/Button";
+import DetailsPrice from "../../component/DetailsPrice";
 
 function PayPage() {
   const [description, setDescription] = useState([]);
@@ -21,18 +23,7 @@ function PayPage() {
   };
   return (
     <div>
-      <h2>Cartão de Crédito</h2>
-      <form>
-        <label>numero do cartão</label>
-        <input type="number" />
-        <label>nome do titular</label>
-        <input type="text" />
-        <label>validade mes/ano</label>
-        <input type="month" />
-        <label>cvv</label>
-        <input type="number" />
-      </form>
-
+      <DetailsPrice />
       <div>
         <p>
           Produto:<strong> R$ {description.subTotal} </strong>
@@ -48,7 +39,7 @@ function PayPage() {
         </p>
       </div>
 
-      
+      <Button />
     </div>
   );
 }
