@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import CartPage from '../screen/CartPage/CartPage'
-// import FeedPage from '../screen/Feedpage/FeedPage'
-// import PayPage from '../screen/PayPage/PayPage'
+// import FeedPage from "../screen/"
+import PayPage from "../screen/Paypage/PayPage"
 
 function Router() {
   return (
@@ -13,10 +13,10 @@ function Router() {
         </Route>
         {/* <Route exact path={'/feed'}>
           <FeedPage />
-        </Route>
+        </Route> */}
         <Route exact path="/paypage">
           <PayPage />
-        </Route> */}
+        </Route>
         <Route>
           <div>Página não encontrada</div>
         </Route>
